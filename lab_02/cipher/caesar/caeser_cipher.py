@@ -1,6 +1,6 @@
-from cipher.caeser import ALPHABET
+from cipher.caesar import ALPHABET
 
-class CaeserCipher:
+class CaesarCipher:  # Đảm bảo tên lớp là CaesarCipher
     def __init__(self):
         self.alphabet = ALPHABET
 
