@@ -20,7 +20,7 @@ def caesar_encrypt():
     text = request.form['inputPlainText']
     key = int(request.form['inputKeyPlain'])
     Caesar = CaesarCipher()
-    encrypted_text = Caesar.encrypt_text(text, key)
+    encrypted_text = Caesar.encrypt(text, key)
     return f"text: {text}<br/> key: {key}<br/> encrypted_text: {encrypted_text}"
 
 @app.route("/decrypt", methods=["POST"])
@@ -28,7 +28,7 @@ def caesar_decrypt():
     text = request.form['inputCipherText']
     key = int(request.form['inputKeyCipher'])
     Caesar = CaesarCipher()
-    decrypted_text = Caesar.decrypt_text(text, key)
+    decrypted_text = Caesar.decrypt(text, key)
     return f"text: {text}<br/> key: {key}<br/> decrypted_text: {decrypted_text}"
 # Vigenere Cipher
 @app.route("/vigenere")
