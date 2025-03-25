@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './ui/rsa.ui'
+# Form implementation generated from reading ui file 'rsa.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -10,17 +10,15 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-import os   
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH']= "../platforms"
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1150, 920)
+        MainWindow.resize(1096, 429)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(440, 20, 151, 61))
+        self.label.setGeometry(QtCore.QRect(440, 20, 191, 61))
         font = QtGui.QFont()
         font.setPointSize(18)
         font.setBold(True)
@@ -28,28 +26,28 @@ class Ui_MainWindow(object):
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(90, 140, 47, 13))
+        self.label_2.setGeometry(QtCore.QRect(90, 140, 61, 16))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(90, 230, 71, 20))
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(580, 140, 61, 20))
+        self.label_4.setGeometry(QtCore.QRect(570, 140, 71, 21))
         self.label_4.setObjectName("label_4")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(580, 230, 51, 16))
+        self.label_5.setGeometry(QtCore.QRect(570, 230, 61, 21))
         self.label_5.setObjectName("label_5")
         self.btnEn = QtWidgets.QPushButton(self.centralwidget)
-        self.btnEn.setGeometry(QtCore.QRect(240, 330, 75, 23))
+        self.btnEn.setGeometry(QtCore.QRect(240, 330, 101, 41))
         self.btnEn.setObjectName("btnEn")
         self.btnDe = QtWidgets.QPushButton(self.centralwidget)
-        self.btnDe.setGeometry(QtCore.QRect(400, 330, 75, 23))
+        self.btnDe.setGeometry(QtCore.QRect(400, 330, 101, 41))
         self.btnDe.setObjectName("btnDe")
         self.btnSign = QtWidgets.QPushButton(self.centralwidget)
-        self.btnSign.setGeometry(QtCore.QRect(740, 330, 75, 23))
+        self.btnSign.setGeometry(QtCore.QRect(714, 330, 101, 41))
         self.btnSign.setObjectName("btnSign")
         self.btnVerify = QtWidgets.QPushButton(self.centralwidget)
-        self.btnVerify.setGeometry(QtCore.QRect(900, 330, 75, 23))
+        self.btnVerify.setGeometry(QtCore.QRect(894, 330, 81, 41))
         self.btnVerify.setObjectName("btnVerify")
         self.btnKeys = QtWidgets.QPushButton(self.centralwidget)
         self.btnKeys.setGeometry(QtCore.QRect(650, 40, 101, 23))
@@ -68,7 +66,7 @@ class Ui_MainWindow(object):
         self.textEdit_4.setObjectName("textEdit_4")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1150, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1096, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -91,13 +89,3 @@ class Ui_MainWindow(object):
         self.btnSign.setText(_translate("MainWindow", "Sign"))
         self.btnVerify.setText(_translate("MainWindow", "Verify"))
         self.btnKeys.setText(_translate("MainWindow", "Generate Keys"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
