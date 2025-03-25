@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './ui/ecc.ui'
+# Form implementation generated from reading ui file 'ecc.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -10,17 +10,15 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-import os   
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH']= "../platforms"
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 622)
+        MainWindow.resize(800, 434)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(320, 40, 161, 81))
+        self.label.setGeometry(QtCore.QRect(260, 30, 201, 81))
         font = QtGui.QFont()
         font.setPointSize(18)
         font.setBold(True)
@@ -28,7 +26,7 @@ class Ui_MainWindow(object):
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.btnKeys = QtWidgets.QPushButton(self.centralwidget)
-        self.btnKeys.setGeometry(QtCore.QRect(530, 70, 131, 31))
+        self.btnKeys.setGeometry(QtCore.QRect(530, 60, 131, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -36,7 +34,7 @@ class Ui_MainWindow(object):
         self.btnKeys.setFont(font)
         self.btnKeys.setObjectName("btnKeys")
         self.btnSign = QtWidgets.QPushButton(self.centralwidget)
-        self.btnSign.setGeometry(QtCore.QRect(310, 380, 101, 31))
+        self.btnSign.setGeometry(QtCore.QRect(230, 320, 101, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -44,7 +42,7 @@ class Ui_MainWindow(object):
         self.btnSign.setFont(font)
         self.btnSign.setObjectName("btnSign")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(100, 150, 111, 51))
+        self.label_2.setGeometry(QtCore.QRect(70, 120, 141, 51))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -52,7 +50,7 @@ class Ui_MainWindow(object):
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(100, 230, 91, 61))
+        self.label_3.setGeometry(QtCore.QRect(70, 200, 131, 61))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -60,13 +58,13 @@ class Ui_MainWindow(object):
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.txtInfo = QtWidgets.QTextEdit(self.centralwidget)
-        self.txtInfo.setGeometry(QtCore.QRect(220, 170, 461, 71))
+        self.txtInfo.setGeometry(QtCore.QRect(230, 140, 461, 71))
         self.txtInfo.setObjectName("txtInfo")
         self.txtSign = QtWidgets.QTextEdit(self.centralwidget)
-        self.txtSign.setGeometry(QtCore.QRect(220, 260, 461, 71))
+        self.txtSign.setGeometry(QtCore.QRect(230, 230, 461, 71))
         self.txtSign.setObjectName("txtSign")
         self.btnVerify = QtWidgets.QPushButton(self.centralwidget)
-        self.btnVerify.setGeometry(QtCore.QRect(500, 380, 101, 31))
+        self.btnVerify.setGeometry(QtCore.QRect(590, 320, 101, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -75,7 +73,7 @@ class Ui_MainWindow(object):
         self.btnVerify.setObjectName("btnVerify")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -94,13 +92,3 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Information:"))
         self.label_3.setText(_translate("MainWindow", "Signature:"))
         self.btnVerify.setText(_translate("MainWindow", "Verify"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
